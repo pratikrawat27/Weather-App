@@ -1,0 +1,98 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html{
+    font-size: 120%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #252525;
+    background-image: url('https://source.unsplash.com/1600x900/?citys');    
+    /* transition: background-image .3s; */
+    font-size: 120%;
+    margin: 0;
+    background-size: cover;
+}
+
+.card{
+    background: #000000d0;
+    color: #fff;
+    padding: 2em;   /*1em = 16px*/
+    border-radius: 2em;
+    width: 100%;
+    max-width: 26.25em; /*it will work on all screen size*/
+    margin: 1em;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: .5em;
+    border-radius: 50%;
+    border: none;
+    height: 3.2em;
+    cursor: pointer;
+    width: 3.2em;
+    background: #7c7c7c2b;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+button:hover{
+    color: #fff;
+    background: #dbdbdb2b;
+}
+
+.search-bar{
+    border: none;
+    outline: none;
+    padding: .4em 1em;
+    border-radius: 1.5em;
+    background: #7c7c7c2b;
+    color: #fff;
+    font-size: 105%;
+    width: calc(100% - 6.25em);
+}
+
+.weather{
+    margin: 0 1.2em;
+}
+
+.temp{
+    margin: 0;
+    margin-bottom: .4em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.weather-description{
+    text-transform: capitalize;
+    margin-left: .5em;
+}
+
+.loading{
+    visibility: hidden;
+    max-height: 1.25em;
+    position: relative;
+}
+
+.loading::after{
+    visibility: visible;
+    content: "Loading.....";
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 1.25em;
+}
